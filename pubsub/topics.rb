@@ -315,7 +315,8 @@ if $PROGRAM_NAME == __FILE__
   when "create_push_subscription"
     create_push_subscription project_id:        ARGV.shift,
                              topic_name:        ARGV.shift,
-                             subscription_name: ARGV.shift
+                             subscription_name: ARGV.shift,
+                             endpoint:          ARGV.shift
   when "publish_message"
     publish_message project_id: ARGV.shift,
                     topic_name: ARGV.shift
